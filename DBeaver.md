@@ -1,8 +1,7 @@
 # DBeaver 23的連線教學
 
 ## 設定MYSQL
-1. 在 WSL 2 中啟動 MySQL 服務  
-開啟 WSL 終端，並執行以下命令以啟動 MySQL 服務：  
+1. 在 WSL 2 中啟動 MySQL 服務，執行以下命令以啟動啟動：  
  ```
  sudo service mysql start
  ```
