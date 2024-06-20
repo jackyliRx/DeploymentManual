@@ -41,7 +41,7 @@
  GRANT ALL PRIVILEGES ON *.* TO 'your_username'@'%';
  FLUSH PRIVILEGES;
  ```
- <details>
+ </details>
 
 <details>
 <summary> 在 DBeaver 中設定連接 </summary>
@@ -63,4 +63,4 @@
 儲存連線：
 
 如果測試連線成功，點選 "Finish" 儲存連線設定。
-<details>
+</details>
