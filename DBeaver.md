@@ -20,14 +20,14 @@
  ```
  sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
  ```
- 找到 bind-address 行，並將其改為 0.0.0.0，以允許來自所有位址的連接：  
+4. 找到 bind-address 行，並將其改為 0.0.0.0，以允許來自所有位址的連接：  
  > bind-address = 0.0.0.0
  按 Ctrl + X，然後按 Y，最後按 Enter 儲存並退出編輯器。  
- 重啟 MySQL 服務：  
+5. 重啟 MySQL 服務：  
  ```
  sudo service mysql restart
  ```
- 建立遠端存取使用者（可選），確保 MySQL 使用者允許從外部連線。
+6. 建立遠端存取使用者（可選），確保 MySQL 使用者允許從外部連線。
  如果需要，可以建立一個允許從任何主機連接的使用者：  
  ```
  CREATE USER 'your_username'@'%' IDENTIFIED BY 'your_password';
@@ -35,14 +35,9 @@
  FLUSH PRIVILEGES;
  ```
 
-**在 DBeaver 中設定連接**
-
-點選功能表列中的 "Database" -> "New Connection"。  
-選擇 MySQL，然後點選 "Next"。  
-設定連接參數：  
+**DBeaver 設定連接**
 
 在 "Connection Settings" 頁面中，填寫以下資訊：  
-
 主機名稱：輸入 WSL 2 的 IP 位址，例如 172.20.240.1。  
 連接埠：預設 MySQL 連接埠為 3306，如果有更改，請填寫相應連接埠。  
 資料庫：輸入您要連線的資料庫名稱。  
@@ -50,8 +45,3 @@
 密碼：輸入對應的使用者密碼。  
 測試連接：  
     點選 "Test Connection" 按鈕，確保 DBeaver 能成功連線到 MySQL 資料庫。  
-
-儲存連線：  
-
-如果測試連線成功，點選 "Finish" 儲存連線設定。  
-</details>
