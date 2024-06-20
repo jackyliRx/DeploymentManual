@@ -10,19 +10,19 @@
  ```
  sudo service mysql status
  ```
-3. 尋找 WSL 2 的 IP 位址  
- 為了從 Windows 連線到 WSL 2 中的 MySQL，您需要找到 WSL 2 的 IP 位址。  
+3. 尋找 WSL 2 的 IP 位址，為了從 Windows 連線到 WSL 2 中的 MySQL，需要找到 WSL 2 的 IP 位址。   
  ```
  hostname -I
  ```
-4. 設定 MySQL 允許外部連接  
- 編輯 MySQL 設定檔 mysqld.cnf(可跳過)：  
+4. 設定 MySQL 允許外部連接，設定檔 mysqld.cnf(可跳過)：  
  ```
  sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
  ```
-5. 找到 bind-address 行，並將其改為 0.0.0.0，以允許來自所有位址的連接：  
- > bind-address = 0.0.0.0  
- > 按 Ctrl + X，然後按 Y，最後按 Enter 儲存並退出編輯器。
+5. 找到 bind-address 行，並將其改為 0.0.0.0，以允許來自所有位址的連接：
+   > 按 Ctrl + X，然後按 Y，最後按 Enter 儲存並退出編輯器。
+ ```
+ bind-address = 0.0.0.0
+```
 6. 重啟 MySQL 服務：  
  ```
  sudo service mysql restart
