@@ -42,6 +42,7 @@
  ```
 
 **在 DBeaver 中設定連接**
+
 點選功能表列中的 "Database" -> "New Connection"。
 選擇 MySQL，然後點選 "Next"。
 設定連接參數：
