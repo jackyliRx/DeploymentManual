@@ -21,8 +21,8 @@
  sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
  ```
 5. 找到 bind-address 行，並將其改為 0.0.0.0，以允許來自所有位址的連接：  
- > bind-address = 0.0.0.0
- 按 Ctrl + X，然後按 Y，最後按 Enter 儲存並退出編輯器。
+ > bind-address = 0.0.0.0  
+ > 按 Ctrl + X，然後按 Y，最後按 Enter 儲存並退出編輯器。
 6. 重啟 MySQL 服務：  
  ```
  sudo service mysql restart
