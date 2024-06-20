@@ -1,4 +1,4 @@
--- DBeaver 23的連線方式
+DBeaver 23的連線方式
 1. 在 WSL 2 中啟動 MySQL 服務
 1-1. 啟動 MySQL 服務：
  開啟 WSL 終端，並執行以下命令以啟動 MySQL 服務：
