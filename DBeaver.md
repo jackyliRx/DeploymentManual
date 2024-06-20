@@ -1,6 +1,6 @@
-#DBeaver 23的連線教學
+# DBeaver 23的連線教學
 
-**設定MYSQL**
+## 設定MYSQL
 1. 在 WSL 2 中啟動 MySQL 服務  
 開啟 WSL 終端，並執行以下命令以啟動 MySQL 服務：  
  ```
@@ -35,8 +35,7 @@
  FLUSH PRIVILEGES;
  ```
 
-**DBeaver 設定連接**
-
+## DBeaver 設定連接
 在 "Connection Settings" 頁面中，填寫以下資訊：  
 主機名稱：輸入 WSL 2 的 IP 位址，例如 172.20.240.1。  
 連接埠：預設 MySQL 連接埠為 3306，如果有更改，請填寫相應連接埠。  
